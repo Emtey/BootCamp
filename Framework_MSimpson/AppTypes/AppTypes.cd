@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="AppTypes.CustomDescriptionAttribute">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CustomDescriptionAttribute.cs</FileName>
+      <HashCode>AAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppTypes.DeveloperInfoAttribute">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DeveloperInfoAttribute.cs</FileName>
+      <HashCode>AAAAIAAAAIAAAEAABAAAAAQAAAAAAAABAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppTypes.Supplier">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Supplier.cs</FileName>
+      <HashCode>AAAABAIAAAAAAAQFgAhAAAIgAIAAAIAAAQAAAAAAAiA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="AppTypes.Supplier.SortByCountryRegionCity">
+        <TypeIdentifier>
+          <NewMemberFileName>Supplier.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="AppTypes.Supplier.SortByTypeCompanyName">
+        <TypeIdentifier>
+          <NewMemberFileName>Supplier.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AppTypes.Suppliers">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Suppliers.cs</FileName>
+      <HashCode>AEIAAEAAAAAIABAAKAAQBAQAAAIAAIAACBIAAABQIAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="AppTypes.Suppliers.SupplierEnumerator">
+        <TypeIdentifier>
+          <NewMemberFileName>Suppliers.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AppTypes.AppTypesException">
+    <Position X="11.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>AppTypesException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppTypes.ModificationEventArgs">
+    <Position X="11.5" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>ModificationEventArgs.cs</FileName>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppTypes.Product">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Product.cs</FileName>
+      <HashCode>IAACDAACAgAEgAQFgADAQgABABEEIIBIACAAgAgoByA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="AppTypes.Product.SortBySupplierID">
+        <TypeIdentifier>
+          <NewMemberFileName>Product.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="AppTypes.Product.SortByCategoryID">
+        <TypeIdentifier>
+          <NewMemberFileName>Product.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AppTypes.Products">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Products.cs</FileName>
+      <HashCode>IGIAAEAAAAAAABAcCAAABAQAEAABAAAACAAAAABQIAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AppTypes.GenericCollection&lt;T&gt;">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GenericCollection.cs</FileName>
+      <HashCode>AGIAAEAAAAAAABAQCAgABAQAAAAAAAAACAAAAABQIAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="AppTypes.SupplierTypes">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SupplierTypes.cs</FileName>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AppTypes.ModificationEventStatus">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ModificationEventStatus.cs</FileName>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="AppTypes.CollectionModifiedHandler">
+    <Position X="9.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CollectionModifiedHandler.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAIAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+</ClassDiagram>

@@ -1,0 +1,13 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\TestHarness.exe
+bin\Debug\TestHarness.pdb
+bin\Debug\AppTypes.dll
+bin\Debug\Foundation.dll
+bin\Debug\Foundation.pdb
+bin\Debug\Foundation.xml
+bin\Debug\AppTypes.pdb
+bin\Debug\AppTypes.xml
+obj\Debug\TestHarness.exe
+obj\Debug\TestHarness.pdb
+bin\Debug\DataAccess.dll
+bin\Debug\TestHarness.XML

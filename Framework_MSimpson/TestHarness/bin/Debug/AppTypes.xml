@@ -1,0 +1,900 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AppTypes</name>
+    </assembly>
+    <members>
+        <member name="T:AppTypes.ModificationEventArgs">
+            <summary>
+            ModificationEventArgs class. Inherits from EventArgs.
+            Holds the ModificationEventStatus and the obj that the event was raise by. 
+            </summary>
+        </member>
+        <member name="M:AppTypes.ModificationEventArgs.#ctor">
+            <summary>
+            Default constructor of ModificationEventArgs
+            </summary>
+        </member>
+        <member name="M:AppTypes.ModificationEventArgs.#ctor(AppTypes.ModificationEventStatus,System.Object)">
+            <summary>
+            Overidden Constructor of ModificationEventArgs 
+            </summary>
+            <param name="MES">ModificationEventStatus parm</param>
+            <param name="obj">Object parm</param>
+        </member>
+        <member name="P:AppTypes.ModificationEventArgs.ModificationEventStatus">
+            <summary>
+            Property for ModificationEventStatus.
+            </summary>
+        </member>
+        <member name="P:AppTypes.ModificationEventArgs.ModifiedObjectReference">
+            <summary>
+            Property for ModifiedObjectReference
+            </summary>
+        </member>
+        <member name="T:AppTypes.AppTypesException">
+            <summary>
+            AppTypesException Class inherits from Exception
+            </summary>
+        </member>
+        <member name="M:AppTypes.AppTypesException.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:AppTypes.AppTypesException.#ctor(System.String)">
+            <summary>
+            Constructor that accepts a message
+            </summary>
+            <param name="message">A string message</param>
+        </member>
+        <member name="M:AppTypes.AppTypesException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor that accepts SErialization information.
+            Gets the line number field from the info.
+            </summary>
+            <param name="info">Stores all the data needed to serialize or deserialize and object</param>
+            <param name="context">describes the source and destination or serialized stream</param>
+        </member>
+        <member name="M:AppTypes.AppTypesException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor that accepts a message and an Exception
+            parses it through myMatch for the word ":line" extracts the
+            characters (line number) and stores it in the myMatch
+            field.  The we append it to the LineNumber, property and we
+            are good to go.  Found it at site: http://www.regular-expressions.info/repeat.html
+            </summary>
+            <param name="message">A string message</param>
+            <param name="ex">an exception</param>
+        </member>
+        <member name="P:AppTypes.AppTypesException.LineNumber">
+            <summary>
+            property for LineNumber
+            </summary>
+        </member>
+        <member name="T:AppTypes.Suppliers">
+            <summary>
+            Suppliers Class.  Inherits from ICustomCollection and IEnumerable.
+            </summary>
+        </member>
+        <member name="M:AppTypes.Suppliers.#ctor">
+            <summary>
+            Default Constructor for Suppliers
+            </summary>
+        </member>
+        <member name="M:AppTypes.Suppliers.CreateSupplier">
+            <summary>
+            Creates a supplier object using the default constructor
+            with no arguments.
+            </summary>
+            <returns>Supplier object</returns>
+        </member>
+        <member name="M:AppTypes.Suppliers.CreateSupplier(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,AppTypes.SupplierTypes)">
+            <summary>
+            Creates a supplier object using a non default constructor
+            with all the arguments.
+            </summary>
+            <param name="iD">ID of Supplier (int)</param>
+            <param name="companyName">CompanyName of supplier (string)</param>
+            <param name="contactName">Contact Name of supplier (string)</param>
+            <param name="contactTitle">Contact Title of supplier (string)</param>
+            <param name="address">Address of supplier (string)</param>
+            <param name="city">City of supplier (string)</param>
+            <param name="region">Region of supplier (string)</param>
+            <param name="postalCode">PostalCode of supplier (string)</param>
+            <param name="country">Country of supplier (string)</param>
+            <param name="phone">Phone of supplier (string)</param>
+            <param name="fax">Fax of supplier (string)</param>
+            <param name="homePage">Homepage of supplier (string)</param>
+            <param name="type">Type of supplier (SupplierTypes)</param>
+            <returns>Supplier Object.</returns>
+        </member>
+        <member name="M:AppTypes.Suppliers.GetEnumerator">
+            <summary>
+            IEnumerable GetEnumerator method.  Inherited from IEnumerator.
+            </summary>
+            <returns>Ienumerator object</returns>
+        </member>
+        <member name="M:AppTypes.Suppliers.GetReverseEnumerator">
+            <summary>
+            Name enumerator used to iterate through a list of suppliers in reverse.
+            </summary>
+            <returns>Ienumerator object</returns>
+        </member>
+        <member name="M:AppTypes.Suppliers.GetTypeEnumerator(AppTypes.SupplierTypes)">
+            <summary>
+            Goes through the collection, looking for all the Supplier objects
+            that have a type that matches the type passed in.
+            </summary>
+            <param name="type">THe SupplierType enum value</param>
+            <returns>Ienumerator object</returns>
+        </member>
+        <member name="M:AppTypes.Suppliers.Add(System.Object)">
+            <summary>
+            Add method, adds an object to the array.
+            </summary>
+            <param name="value">Should be a Supplier object</param>
+            <returns>returns the index if successful</returns>
+        </member>
+        <member name="M:AppTypes.Suppliers.Clear">
+            <summary>
+            Clears the collection list.
+            </summary>
+        </member>
+        <member name="M:AppTypes.Suppliers.Contains(System.Object)">
+            <summary>
+            Checks to see if the collectin list contains a certain object.
+            </summary>
+            <param name="value">Should be a Supplier object</param>
+            <returns>Returns True if found</returns>
+        </member>
+        <member name="M:AppTypes.Suppliers.IndexOf(System.Object)">
+            <summary>
+            Scans to find the index of a certain object in the collection list.
+            </summary>
+            <param name="value">Should be a supplier object.</param>
+            <returns>the index of the object</returns>
+        </member>
+        <member name="M:AppTypes.Suppliers.Insert(System.Int32,System.Object)">
+            <summary>
+            Inserts an object at a given index in the collection list.
+            </summary>
+            <param name="index">The index</param>
+            <param name="value">Should be a supplier object.</param>
+        </member>
+        <member name="M:AppTypes.Suppliers.Remove(System.Object)">
+            <summary>
+            Removes an object from the collection list.
+            </summary>
+            <param name="value">Should be a supplier object.</param>
+        </member>
+        <member name="M:AppTypes.Suppliers.RemoveAt(System.Int32)">
+            <summary>
+            Removes an object at a specific object.
+            </summary>
+            <param name="index">The index</param>
+        </member>
+        <member name="M:AppTypes.Suppliers.CopyTo(System.Object[])">
+            <summary>
+            Takes the entire collection and copies it to another array.
+            </summary>
+            <param name="objArray">The new array to copy the collection to</param>
+        </member>
+        <member name="M:AppTypes.Suppliers.Sort">
+            <summary>
+            Sorts the collection.
+            </summary>
+        </member>
+        <member name="M:AppTypes.Suppliers.Sort(System.Collections.IComparer)">
+            <summary>
+            Sorts the collection by a comparer object.
+            </summary>
+            <param name="comparer">Comparer object.</param>
+        </member>
+        <member name="P:AppTypes.Suppliers.Count">
+            <summary>
+            Gets the number of suppliers in teh collection.  Inherited from ICustomCollection.
+            </summary>
+        </member>
+        <member name="P:AppTypes.Suppliers.Item(System.Int32)">
+            <summary>
+            Returns the object at a specific index.
+            </summary>
+            <param name="index">The index</param>
+            <returns>Supplier</returns>
+        </member>
+        <member name="M:AppTypes.Suppliers.SupplierEnumerator.#ctor(AppTypes.Suppliers)">
+            <summary>
+            INitialzes the reference to our collection
+            </summary>
+            <param name="sups">THe suppliers object</param>
+        </member>
+        <member name="M:AppTypes.Suppliers.SupplierEnumerator.MoveNext">
+            <summary>
+            Moves to the next index
+            </summary>
+            <returns>False if we are at the end of the collection, True if we have more objects in the collection.</returns>
+        </member>
+        <member name="M:AppTypes.Suppliers.SupplierEnumerator.Reset">
+            <summary>
+            reset the current index back to -1
+            </summary>
+        </member>
+        <member name="P:AppTypes.Suppliers.SupplierEnumerator.Current">
+            <summary>
+            Get the current index, inherits from IEnumerator
+            </summary>
+        </member>
+        <member name="T:AppTypes.ModificationEventStatus">
+            <summary>
+            ModificationEventStatus enumeration
+            </summary>
+        </member>
+        <member name="F:AppTypes.ModificationEventStatus.unsuccessful">
+            <summary>
+            Unsuccesful
+            </summary>
+        </member>
+        <member name="F:AppTypes.ModificationEventStatus.successful">
+            <summary>
+            successful
+            </summary>
+        </member>
+        <member name="T:AppTypes.Supplier">
+            <summary>
+            The Supplier class holds info about suppliers.
+            Its a sealed class so no other classes can inherit from it.
+            It inherits from Foundation.Contact, IComparable and ISerializable.
+            </summary>
+        </member>
+        <member name="M:AppTypes.Supplier.#ctor">
+            <summary>
+            Default Constructor for Supplier class.
+            </summary>
+        </member>
+        <member name="M:AppTypes.Supplier.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,AppTypes.SupplierTypes)">
+            <summary>
+            Non Default Constructor for Supplier (inherits from Contact)
+            </summary>
+            <param name="iD">The Supplier ID (int)</param>
+            <param name="companyName">The Company Name (string)</param>
+            <param name="contactName">The Contact Name (string)</param>
+            <param name="contactTitle">The Contact Title (string)</param>
+            <param name="address">The Contacts Address (string)</param>
+            <param name="city">The Contacts city (string)</param>
+            <param name="region">The contacts region (string)</param>
+            <param name="postalCode">The contacts postal code (string)</param>
+            <param name="country">The contacts country (string)</param>
+            <param name="phone">The contacts phone number (string) </param>
+            <param name="fax">The contacts fax number(string)</param>
+            <param name="homePage">The suppliers homepage (string)</param>
+            <param name="type">The type of supplier (SupplierTypes)</param>
+        </member>
+        <member name="M:AppTypes.Supplier.#ctor(DataAccess.SupplierStruct)">
+            <summary>
+            Gets the supplier information from a struct and loads it.
+            </summary>
+            <param name="supStruct">The supplier struct</param>
+        </member>
+        <member name="M:AppTypes.Supplier.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor for serializing the class
+            </summary>
+            <param name="info">Stores teh data necessary to serialize or deserialize</param>
+            <param name="context">describes source and destination</param>
+        </member>
+        <member name="M:AppTypes.Supplier.ToString">
+            <summary>
+            Override of the ToString method so we can supply our own.
+            </summary>
+            <returns>Supplier ID, Type and Company Name</returns>
+        </member>
+        <member name="M:AppTypes.Supplier.ContactInfo">
+            <summary>
+            Override of Contact.ContactInfo
+            </summary>
+            <returns>Returns a StringBuilder object</returns>
+        </member>
+        <member name="M:AppTypes.Supplier.GetHashCode">
+            <summary>
+            Gets the ID of current object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppTypes.Supplier.Equals(System.Object)">
+            <summary>
+            Takes two objects and compares them for equality
+            </summary>
+            <param name="obj">Object to use for comparison</param>
+            <returns>True = compare, False = not compare</returns>
+        </member>
+        <member name="M:AppTypes.Supplier.op_Equality(AppTypes.Supplier,AppTypes.Supplier)">
+            <summary>
+            Overload of the == operator.
+            </summary>
+            <param name="o1">Supplier object</param>
+            <param name="o2">Supplier Object</param>
+            <returns>True = match, False = no match</returns>
+        </member>
+        <member name="M:AppTypes.Supplier.op_Inequality(AppTypes.Supplier,AppTypes.Supplier)">
+            <summary>
+            Overload of the != operator
+            </summary>
+            <param name="o1">SUpplier Object</param>
+            <param name="o2">Supplier Object</param>
+            <returns>True = no match, False = match</returns>
+        </member>
+        <member name="M:AppTypes.Supplier.PropertyAndValuesCollection">
+            <summary>
+            Returns the Values in the collection.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppTypes.Supplier.GetSortByCountryRegionCity">
+            <summary>
+            Calls Class method in SortByCountryREgionCity to sort
+            by Country, region and city.
+            </summary>
+            <returns>Icomparer object</returns>
+        </member>
+        <member name="M:AppTypes.Supplier.GetSortByTypeCompanyName">
+            <summary>
+            Calls class method in SortByTypeCompanyName to sort
+            by type, and companyName.
+            </summary>
+            <returns>IComparer object</returns>
+        </member>
+        <member name="M:AppTypes.Supplier.op_Explicit(AppTypes.Supplier)~DataAccess.SupplierStruct">
+            <summary>
+            Takes a supplier class, and converts into the SupplierStruct.
+            </summary>
+            <param name="sup">Supplier class</param>
+            <returns></returns>
+        </member>
+        <member name="M:AppTypes.Supplier.CompareTo(System.Object)">
+            <summary>
+            Compares current object to another object
+            </summary>
+            <param name="obj">the object to be compared to</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:AppTypes.Supplier.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Gets teh object data from teh serialize stream.
+            </summary>
+            <param name="info">Stores all data needed to serialize and deserialize</param>
+            <param name="context">describes source and destination of a given stream</param>
+        </member>
+        <member name="P:AppTypes.Supplier.Homepage">
+            <summary>
+            Property for Homepage.  Throws ArgumentOutOfRangeException if the 
+            length is not between 5 and 50.  Homepage can be null.
+            </summary>
+        </member>
+        <member name="P:AppTypes.Supplier.Type">
+            <summary>
+            Property for SupplierTypes.
+            </summary>
+        </member>
+        <member name="T:AppTypes.Supplier.SortByCountryRegionCity">
+            <summary>
+            SortByCountryRegionCity, inner class that sorts Suppliers.
+            Inherits from IComparer.
+            </summary>
+        </member>
+        <member name="M:AppTypes.Supplier.SortByCountryRegionCity.Compare(System.Object,System.Object)">
+            <summary>
+            Compares two objects and determines their order by Country, Region and City
+            </summary>
+            <param name="x">Supplier object</param>
+            <param name="y">Supplier Object</param>
+            <returns> positive number if x greater than y, 0 if x == y, negative number if x less than y</returns>
+        </member>
+        <member name="T:AppTypes.Supplier.SortByTypeCompanyName">
+            <summary>
+            SortByTypeCompanyName inner class that sorts suppliers by Type and Company Name.
+            Inherits IComparer.
+            </summary>
+        </member>
+        <member name="M:AppTypes.Supplier.SortByTypeCompanyName.Compare(System.Object,System.Object)">
+            <summary>
+            Compares two objects and determines their order.
+            </summary>
+            <param name="x">Supplier Object</param>
+            <param name="y">Supplier Object</param>
+            <returns>positive number if x greater than y, 0 if x == y, negative number if x less than y</returns>
+        </member>
+        <member name="T:AppTypes.GenericCollection`1">
+            <summary>
+            GenericCollection Class.
+            Type T represents the generic parm
+            </summary>
+            <typeparam name="T">A generic type</typeparam>
+        </member>
+        <member name="F:AppTypes.GenericCollection`1.items">
+            <summary>
+            myList field of List"T" type.
+            </summary>
+        </member>
+        <member name="M:AppTypes.GenericCollection`1.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:AppTypes.GenericCollection`1.IndexOf(`0)">
+            <summary>
+            Determines the index of the item in the collection.
+            </summary>
+            <param name="item"></param>
+            <returns>int for the type T.</returns>
+        </member>
+        <member name="M:AppTypes.GenericCollection`1.Insert(System.Int32,`0)">
+            <summary>
+            Inserts a value into the collection at the index
+            </summary>
+            <param name="index">The index at which you want to insert</param>
+            <param name="item">The item you wish to insert</param>
+        </member>
+        <member name="M:AppTypes.GenericCollection`1.RemoveAt(System.Int32)">
+            <summary>
+            Removes an instance at index
+            </summary>
+            <param name="index">the index at which you want to remove</param>
+        </member>
+        <member name="M:AppTypes.GenericCollection`1.Add(`0)">
+            <summary>
+            Adds an item to the collection.
+            </summary>
+            <param name="item">The collection type</param>
+        </member>
+        <member name="M:AppTypes.GenericCollection`1.Clear">
+            <summary>
+            CLears the contents of the collection
+            </summary>
+        </member>
+        <member name="M:AppTypes.GenericCollection`1.Contains(`0)">
+            <summary>
+            Scans the list to see if it contains the item.
+            </summary>
+            <param name="item">the type of collection</param>
+            <returns>true = collection contains item, false = collection does not contain item.</returns>
+        </member>
+        <member name="M:AppTypes.GenericCollection`1.CopyTo(`0[],System.Int32)">
+            <summary>
+            Copies from one array to another.
+            </summary>
+            <param name="array">The receiving array</param>
+            <param name="arrayIndex">Index at which to start copy operation</param>
+        </member>
+        <member name="M:AppTypes.GenericCollection`1.Remove(`0)">
+            <summary>
+            Removes the item from the collection
+            </summary>
+            <param name="item">the type of collection</param>
+            <returns>true = successful, false = failure</returns>
+        </member>
+        <member name="M:AppTypes.GenericCollection`1.GetEnumerator">
+            <summary>
+            GetEnumerator
+            </summary>
+            <returns>IEnumerator of type T</returns>
+        </member>
+        <member name="P:AppTypes.GenericCollection`1.Item(System.Int32)">
+            <summary>
+            Gets and sets the index from the list.
+            </summary>
+            <param name="index">the setter index value.</param>
+            <returns>The index for type T</returns>
+        </member>
+        <member name="P:AppTypes.GenericCollection`1.Count">
+            <summary>
+            Count property returns number of items in the collection.
+            </summary>
+        </member>
+        <member name="P:AppTypes.GenericCollection`1.IsReadOnly">
+            <summary>
+            speicifies if the collection is ReadOnly.
+            </summary>
+        </member>
+        <member name="T:AppTypes.CustomDescriptionAttribute">
+            <summary>
+            Attribute CustomerDescriptionAttribute
+            </summary>
+        </member>
+        <member name="M:AppTypes.CustomDescriptionAttribute.#ctor(System.String)">
+            <summary>
+            Constructor for the CustomDescriptionAttribute attribute.
+            </summary>
+            <param name="description">The description</param>
+        </member>
+        <member name="P:AppTypes.CustomDescriptionAttribute.Description">
+            <summary>
+            Description property, this is read only.
+            </summary>
+        </member>
+        <member name="T:AppTypes.DeveloperInfoAttribute">
+            <summary>
+            Custom Attribute DeveloperInfoAttribute
+            </summary>
+        </member>
+        <member name="M:AppTypes.DeveloperInfoAttribute.#ctor(System.String)">
+            <summary>
+            DeveloperInfoAttribute constructor.
+            </summary>
+            <param name="name">Required value since its only set through the constructor</param>
+        </member>
+        <member name="P:AppTypes.DeveloperInfoAttribute.Name">
+            <summary>
+            DeveloperInfoAttribute Name Property.
+            This is positional so its required and its read only.
+            </summary>
+        </member>
+        <member name="P:AppTypes.DeveloperInfoAttribute.Title">
+            <summary>
+            DeveloperInfoAttribute Title property
+            This is named, so its not required.
+            </summary>
+        </member>
+        <member name="P:AppTypes.DeveloperInfoAttribute.Date">
+            <summary>
+            DeveloperInfoAttribute Date property
+            This is named so its not required.
+            </summary>
+        </member>
+        <member name="T:AppTypes.CollectionModifiedHandler">
+            <summary>
+            Delegate used to define the event type to be raised anytime the collection is modified.
+            </summary>
+            <param name="sender">object</param>
+            <param name="args">ModificatEventArgs</param>
+        </member>
+        <member name="T:AppTypes.SupplierTypes">
+            <summary>
+            SupplierTypes enumeration.
+            </summary>
+        </member>
+        <member name="F:AppTypes.SupplierTypes.Product">
+            <summary>
+            Product enumeration
+            </summary>
+        </member>
+        <member name="F:AppTypes.SupplierTypes.Service">
+            <summary>
+            Service enumeration
+            </summary>
+        </member>
+        <member name="F:AppTypes.SupplierTypes.Supply">
+            <summary>
+            Supply enumeration
+            </summary>
+        </member>
+        <member name="T:AppTypes.Products">
+            <summary>
+            Products Class inherits from IList
+            </summary>
+        </member>
+        <member name="F:AppTypes.Products.productsCollection">
+            <summary>
+            Protect productsCollection List of products.
+            </summary>
+        </member>
+        <member name="M:AppTypes.Products.#ctor">
+            <summary>
+            Default constructor for teh Products class
+            </summary>
+        </member>
+        <member name="M:AppTypes.Products.OnCollectionModified(AppTypes.ModificationEventArgs)">
+            <summary>
+            Method that takes in a ModificationEventArgs arguments,
+            then raises the CollectionModified event.
+            </summary>
+            <param name="mea">ModificationEventArgs</param>
+        </member>
+        <member name="M:AppTypes.Products.IndexOf(AppTypes.Product)">
+            <summary>
+            GEts ths index of the product that was passed in.
+            </summary>
+            <param name="item">Product</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:AppTypes.Products.Insert(System.Int32,AppTypes.Product)">
+            <summary>
+            Inserts into the collection an certain item at a certain index
+            </summary>
+            <param name="index">index</param>
+            <param name="item">Product</param>
+        </member>
+        <member name="M:AppTypes.Products.RemoveAt(System.Int32)">
+            <summary>
+            Removes an item from the collection at specified index
+            </summary>
+            <param name="index">index</param>
+        </member>
+        <member name="M:AppTypes.Products.Add(AppTypes.Product)">
+            <summary>
+            Add item to the collection list.
+            </summary>
+            <param name="item">Product</param>
+        </member>
+        <member name="M:AppTypes.Products.Clear">
+            <summary>
+            Clear the list.
+            </summary>
+        </member>
+        <member name="M:AppTypes.Products.Contains(AppTypes.Product)">
+            <summary>
+            Check to see if the collection list contains this item.
+            </summary>
+            <param name="item">Product</param>
+            <returns>True or False</returns>
+        </member>
+        <member name="M:AppTypes.Products.CopyTo(AppTypes.Product[],System.Int32)">
+            <summary>
+            Copies collection list to another list.
+            </summary>
+            <param name="array">The array name to copy the collection list to</param>
+            <param name="arrayIndex">The index at which to start copying the collection.</param>
+        </member>
+        <member name="M:AppTypes.Products.Remove(AppTypes.Product)">
+            <summary>
+            Removes an item from the productsCollection
+            </summary>
+            <param name="item">Product</param>
+            <returns>true = success or false = failure</returns>
+        </member>
+        <member name="M:AppTypes.Products.GetEnumerator">
+            <summary>
+            The GetEnumerator of the collection.  Basically just iterates through teh collection.
+            </summary>
+            <returns>IEnumerator index</returns>
+        </member>
+        <member name="M:AppTypes.Products.CreateProduct">
+            <summary>
+            Call the default constructor of Product to create new Product
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppTypes.Products.CreateProduct(System.Int32,System.String,System.Int32,System.Int32,System.String,System.Decimal,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Call the non default constructor of Product to create a new Product, when you know the values.
+            </summary>
+            <param name="iD">ID of the product (int)</param>
+            <param name="productName">Name of the product (string)</param>
+            <param name="supplierID">Supplier ID of the product (int)</param>
+            <param name="categoryID">Category ID of the product (int)</param>
+            <param name="quantityPerUnit">Quantity Per Unit of the product (string)</param>
+            <param name="unitPrice">The unit price of the product (decimal)</param>
+            <param name="unitsInStock">The units in stock of the product (int)</param>
+            <param name="unitsOnOrder">The units on order of the product (int)</param>
+            <param name="reOrderLevel">The reorder level of the product (int)</param>
+            <returns></returns>
+        </member>
+        <member name="M:AppTypes.Products.Sort">
+            <summary>
+            Call the sort method on teh productsCollection with no argument
+            </summary>
+        </member>
+        <member name="M:AppTypes.Products.Sort(System.Collections.Generic.IComparer{AppTypes.Product})">
+            <summary>
+            call the sort method on the productsCollection with an argument
+            </summary>
+            <param name="prod"></param>
+        </member>
+        <member name="E:AppTypes.Products.CollectionModified">
+            <summary>
+            Event Declaration
+            </summary>
+        </member>
+        <member name="P:AppTypes.Products.Item(System.Int32)">
+            <summary>
+            Get/set the index property in the collection
+            </summary>
+            <param name="index">index</param>
+            <returns>Product</returns>
+        </member>
+        <member name="P:AppTypes.Products.Count">
+            <summary>
+            Gets the count of the productsCollection.
+            </summary>
+        </member>
+        <member name="P:AppTypes.Products.IsReadOnly">
+            <summary>
+            Readonly property, we are just setting it to always return false
+            </summary>
+        </member>
+        <member name="T:AppTypes.Product">
+            <summary>
+            Product Class, inherits IComparable
+            </summary>
+        </member>
+        <member name="F:AppTypes.Product._id">
+            <summary>
+            id field of the product.
+            </summary>
+        </member>
+        <member name="M:AppTypes.Product.#ctor">
+            <summary>
+            Default Constructor for Product Class
+            </summary>
+        </member>
+        <member name="M:AppTypes.Product.#ctor(System.Int32,System.String,System.Int32,System.Int32,System.String,System.Decimal,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Non-Default constructor for Product class.
+            </summary>
+            <param name="iD">Product ID (int)</param>
+            <param name="productName">ProductName (string)</param>
+            <param name="supplierID">Supplier ID (int)</param>
+            <param name="categoryID">Category ID (int)</param>
+            <param name="quantityPerUnit">Quantity per unit (string)</param>
+            <param name="unitPrice">Unit Price (decimal)</param>
+            <param name="unitsInStock">Units in STock (int)</param>
+            <param name="unitsOnOrder">Units on order (int)</param>
+            <param name="reOrderLevel">Reorder level (int)</param>
+        </member>
+        <member name="M:AppTypes.Product.#ctor(DataAccess.ProductStruct)">
+            <summary>
+            Product constructor that accepts a Product Struct.
+            </summary>
+            <param name="prodStruct">Product Struct</param>
+        </member>
+        <member name="M:AppTypes.Product.ToString">
+            <summary>
+            Override of the ToString method.
+            </summary>
+            <returns>Supplier ID, Type and Company Name</returns>
+        </member>
+        <member name="M:AppTypes.Product.PropertyAndValuesCollection">
+            <summary>
+            Returns values in the collections.
+            </summary>
+            <returns>IEnumerator object</returns>
+        </member>
+        <member name="M:AppTypes.Product.Equals(System.Object)">
+            <summary>
+            Takes two objects and compares them for equality
+            </summary>
+            <param name="obj">Object to use for comparison</param>
+            <returns>True = compare, False = not compare</returns>
+        </member>
+        <member name="M:AppTypes.Product.op_Equality(AppTypes.Product,AppTypes.Product)">
+            <summary>
+            Overload of the == operator.
+            </summary>
+            <param name="o1">Product object</param>
+            <param name="o2">Product Object</param>
+            <returns>True = match, False = no match</returns>
+        </member>
+        <member name="M:AppTypes.Product.op_Inequality(AppTypes.Product,AppTypes.Product)">
+            <summary>
+            Overload of the != operator
+            </summary>
+            <param name="o1">Product Object</param>
+            <param name="o2">Product Object</param>
+            <returns>True = no match, False = match</returns>
+        </member>
+        <member name="M:AppTypes.Product.GetHashCode">
+            <summary>
+            Gets the ID of current object.
+            </summary>
+            <returns>the product ID</returns>
+        </member>
+        <member name="M:AppTypes.Product.op_GreaterThan(AppTypes.Product,AppTypes.Product)">
+            <summary>
+            Check to see if Object1 is greater than object2
+            we only check ID here.
+            </summary>
+            <param name="o1">Product Object</param>
+            <param name="o2">Product Object</param>
+            <returns>True if 1st object is greater than second, otherwise its false.</returns>
+        </member>
+        <member name="M:AppTypes.Product.op_LessThan(AppTypes.Product,AppTypes.Product)">
+            <summary>
+            Check to see if Object1 is less than object2
+            we only check ID here.
+            </summary>
+            <param name="o1">Product Object</param>
+            <param name="o2">Product Object</param>
+            <returns>True if 1st object is less than second, otherwise its false.</returns>
+        </member>
+        <member name="M:AppTypes.Product.op_LessThanOrEqual(AppTypes.Product,AppTypes.Product)">
+            <summary>
+            Check to see if Object1 is less than or equal to object2
+            we only check ID here.
+            </summary>
+            <param name="o1">Product Object</param>
+            <param name="o2">Product Object</param>
+            <returns>True if 1st object is less than or equal to second, otherwise its false.</returns>
+        </member>
+        <member name="M:AppTypes.Product.op_GreaterThanOrEqual(AppTypes.Product,AppTypes.Product)">
+            <summary>
+            Check to see if Object1 is greater than or equal to object2
+            we only check ID here.
+            </summary>
+            <param name="o1">Product Object</param>
+            <param name="o2">Product Object</param>
+            <returns>True if 1st object is greater than or equal to second, otherwise its false.</returns>
+        </member>
+        <member name="M:AppTypes.Product.GetSortByCategoryID">
+            <summary>
+            Calls Class method in SortByCategoryID to sort
+            by category ID.
+            </summary>
+            <returns>Icomparer object</returns>
+        </member>
+        <member name="M:AppTypes.Product.GetSortBySupplierID">
+            <summary>
+            Calls Class method in SortBySupplierID to sort
+            by Supplier ID.
+            </summary>
+            <returns>Icomparer object</returns>
+        </member>
+        <member name="M:AppTypes.Product.op_Explicit(AppTypes.Product)~DataAccess.ProductStruct">
+            <summary>
+            Takes a Product class, and converts into the ProductStruct.
+            </summary>
+            <param name="p">Product class</param>
+            <returns>Product Struct</returns>
+        </member>
+        <member name="M:AppTypes.Product.CompareTo(AppTypes.Product)">
+            <summary>
+            Implementation of CompareTo method, inherited from IComparable.
+            Compares one object to another.
+            </summary>
+            <param name="other">A Product object</param>
+            <returns>1 if this is greater than Product, 0 if they are equal and -1 if this less than Product</returns>
+        </member>
+        <member name="P:AppTypes.Product.ID">
+            <summary>
+            ID field properties.  Throws ArgumentOutOFRangeException if the value is not between 1 to 9,999.
+            </summary>
+        </member>
+        <member name="P:AppTypes.Product.ProductName">
+            <summary>
+            Product name field properties.  Calls throwsException if the product name is not 1 to 40 chars in length.
+            </summary>
+        </member>
+        <member name="P:AppTypes.Product.SupplierID">
+            <summary>
+            SupplierID field properties.  Throws ArgumentOutOfRangeException if supplier id is not between 1 to 99,999
+            </summary>
+        </member>
+        <member name="P:AppTypes.Product.CategoryID">
+            <summary>
+            CategoryID field properties
+            </summary>
+        </member>
+        <member name="P:AppTypes.Product.QuantityPerUnit">
+            <summary>
+            QuantityPerUnit field properties.  Calls throwException if length is not between 1 and 20.
+            </summary>
+        </member>
+        <member name="P:AppTypes.Product.UnitPrice">
+            <summary>
+            UnitPrice field properties
+            </summary>
+        </member>
+        <member name="P:AppTypes.Product.UnitsInStock">
+            <summary>
+            UnitsInStock field properties
+            </summary>
+        </member>
+        <member name="P:AppTypes.Product.UnitsOnOrder">
+            <summary>
+            UnitsOnOrder field properties
+            </summary>
+        </member>
+        <member name="P:AppTypes.Product.ReOrderLevel">
+            <summary>
+            ReOrderLevel field properties
+            </summary>
+        </member>
+        <member name="M:AppTypes.Product.SortBySupplierID.Compare(AppTypes.Product,AppTypes.Product)">
+            <summary>
+            Compare x to y, sort by SUpplier ID.
+            </summary>
+            <param name="x">Product</param>
+            <param name="y">Product</param>
+            <returns>integer</returns>
+        </member>
+    </members>
+</doc>

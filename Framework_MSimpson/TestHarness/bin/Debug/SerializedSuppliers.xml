@@ -1,0 +1,110 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:Suppliers id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/AppTypes/AppTypes%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<suppliersCollection href="#ref-3"/>
+</a1:Suppliers>
+<a2:ArrayList id="ref-3" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-4"/>
+<_size>6</_size>
+<_version>6</_version>
+</a2:ArrayList>
+<SOAP-ENC:Array id="ref-4" SOAP-ENC:arrayType="xsd:anyType[8]">
+<item href="#ref-5"/>
+<item href="#ref-6"/>
+<item href="#ref-7"/>
+<item href="#ref-8"/>
+<item href="#ref-9"/>
+<item href="#ref-10"/>
+</SOAP-ENC:Array>
+<a1:Supplier id="ref-5" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/AppTypes/AppTypes%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<ID>21</ID>
+<CompanyName id="ref-11">MyCompany</CompanyName>
+<ContactName id="ref-12">Mark</ContactName>
+<ContactTitle id="ref-13">CEO</ContactTitle>
+<Address id="ref-14">1234 Here St. PO Box 123</Address>
+<City id="ref-15">Dallas</City>
+<Region id="ref-16">Texas</Region>
+<PostalCode id="ref-17">12344</PostalCode>
+<Country id="ref-18">USA</Country>
+<Phone id="ref-19">555123123</Phone>
+<Fax id="ref-20">1231231234</Fax>
+<Homepage id="ref-21">www.MyCompany.com</Homepage>
+<SupplierType xsi:type="a1:SupplierTypes" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/AppTypes/AppTypes%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">Supply</SupplierType>
+</a1:Supplier>
+<a1:Supplier id="ref-6" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/AppTypes/AppTypes%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<ID>22</ID>
+<CompanyName id="ref-22">ThisCompany</CompanyName>
+<ContactName id="ref-23">Bob</ContactName>
+<ContactTitle id="ref-24">Lackey</ContactTitle>
+<Address id="ref-25">1234 There</Address>
+<City id="ref-26">Washington</City>
+<Region id="ref-27">Maryland</Region>
+<PostalCode id="ref-28">1234</PostalCode>
+<Country id="ref-29">ASU</Country>
+<Phone href="#ref-20"/>
+<Fax href="#ref-20"/>
+<Homepage id="ref-30">www.thiscompany.com</Homepage>
+<SupplierType xsi:type="a1:SupplierTypes" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/AppTypes/AppTypes%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">Product</SupplierType>
+</a1:Supplier>
+<a1:Supplier id="ref-7" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/AppTypes/AppTypes%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<ID>23</ID>
+<CompanyName id="ref-31">phifzer</CompanyName>
+<ContactName href="#ref-23"/>
+<ContactTitle href="#ref-24"/>
+<Address href="#ref-25"/>
+<City id="ref-32">Here</City>
+<Region id="ref-33">Markland</Region>
+<PostalCode href="#ref-28"/>
+<Country id="ref-34">BBB</Country>
+<Phone href="#ref-20"/>
+<Fax href="#ref-20"/>
+<Homepage href="#ref-30"/>
+<SupplierType xsi:type="a1:SupplierTypes" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/AppTypes/AppTypes%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">Service</SupplierType>
+</a1:Supplier>
+<a1:Supplier id="ref-8" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/AppTypes/AppTypes%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<ID>24</ID>
+<CompanyName id="ref-35">phisher</CompanyName>
+<ContactName href="#ref-23"/>
+<ContactTitle href="#ref-24"/>
+<Address href="#ref-25"/>
+<City id="ref-36">There</City>
+<Region href="#ref-16"/>
+<PostalCode href="#ref-28"/>
+<Country id="ref-37">UAS</Country>
+<Phone href="#ref-20"/>
+<Fax href="#ref-20"/>
+<Homepage href="#ref-30"/>
+<SupplierType xsi:type="a1:SupplierTypes" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/AppTypes/AppTypes%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">Service</SupplierType>
+</a1:Supplier>
+<a1:Supplier id="ref-9" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/AppTypes/AppTypes%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<ID>25</ID>
+<CompanyName id="ref-38">phish</CompanyName>
+<ContactName href="#ref-23"/>
+<ContactTitle href="#ref-24"/>
+<Address href="#ref-25"/>
+<City id="ref-39">Anywhere</City>
+<Region href="#ref-27"/>
+<PostalCode href="#ref-28"/>
+<Country href="#ref-29"/>
+<Phone href="#ref-20"/>
+<Fax href="#ref-20"/>
+<Homepage href="#ref-30"/>
+<SupplierType xsi:type="a1:SupplierTypes" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/AppTypes/AppTypes%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">Product</SupplierType>
+</a1:Supplier>
+<a1:Supplier id="ref-10" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/AppTypes/AppTypes%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<ID>26</ID>
+<CompanyName id="ref-40">petunia</CompanyName>
+<ContactName href="#ref-23"/>
+<ContactTitle href="#ref-24"/>
+<Address href="#ref-25"/>
+<City id="ref-41">Anywher</City>
+<Region href="#ref-27"/>
+<PostalCode href="#ref-28"/>
+<Country href="#ref-29"/>
+<Phone href="#ref-20"/>
+<Fax href="#ref-20"/>
+<Homepage href="#ref-30"/>
+<SupplierType xsi:type="a1:SupplierTypes" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/AppTypes/AppTypes%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">Product</SupplierType>
+</a1:Supplier>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

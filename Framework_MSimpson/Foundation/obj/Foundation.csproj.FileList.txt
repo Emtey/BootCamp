@@ -1,0 +1,5 @@
+bin\Debug\Foundation.dll
+bin\Debug\Foundation.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Foundation.dll
+obj\Debug\Foundation.pdb

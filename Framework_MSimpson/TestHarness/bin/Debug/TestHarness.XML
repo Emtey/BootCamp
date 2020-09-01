@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestHarness</name>
+    </assembly>
+    <members>
+        <member name="M:TestHarness.Program.CollectionModifiedEvent(System.Object,AppTypes.ModificationEventArgs)">
+            <summary>
+            Event handler event
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+    </members>
+</doc>
