@@ -1,0 +1,3 @@
+This one is the same thing as the ASP.NET project that I did in Phase Three, but I added a web service, 
+employing the basic profile, between the Presentation layer and the Business layer. 
+I enabled WSE 3.0 security using Certificates. Signing, encryption and secure session are enabled for this.
