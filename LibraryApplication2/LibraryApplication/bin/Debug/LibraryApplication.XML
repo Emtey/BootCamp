@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LibraryApplication</name>
+    </assembly>
+    <members>
+        <member name="T:LibraryApplication.frmJuvenileRegistration">
+            <summary>
+            Juvenile Registration form.
+            </summary>
+        </member>
+        <member name="F:LibraryApplication.frmJuvenileRegistration.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.frmJuvenileRegistration.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LibraryApplication.frmJuvenileRegistration.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.frmJuvenileRegistration.#ctor">
+            <summary>
+            Constructor for frmJuvenileRegistration.
+            </summary>
+        </member>
+        <member name="T:LibraryApplication.frmAdultRegistration">
+            <summary>
+            Add Adult form.
+            </summary>
+        </member>
+        <member name="F:LibraryApplication.frmAdultRegistration.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.frmAdultRegistration.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LibraryApplication.frmAdultRegistration.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.frmAdultRegistration.#ctor">
+            <summary>
+            Constructor of AdultRegistration.
+            </summary>
+        </member>
+        <member name="T:LibraryApplication.frmMemberInfo">
+            <summary>
+            Member Info window
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.frmMemberInfo.#ctor">
+            <summary>
+            Member Info Constructor
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.frmMemberInfo.#ctor(Entities.Member)">
+            <summary>
+            Constructor that takes a Member argument.
+            </summary>
+            <param name="m">Member</param>
+        </member>
+        <member name="F:LibraryApplication.frmMemberInfo.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.frmMemberInfo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LibraryApplication.frmMemberInfo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LibraryApplication.frmMemberInfo.txtMemberID">
+            <summary>
+            The memberID text box.
+            </summary>
+        </member>
+        <member name="T:LibraryApplication.frmAbout">
+            <summary>
+            The form that is displayed when the user selects About from the main menu.
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.frmAbout.#ctor">
+            <summary>
+            Constructor of frmAbout.  Right now its loading the text for the about panel.
+            </summary>
+        </member>
+        <member name="F:LibraryApplication.frmAbout.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.frmAbout.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LibraryApplication.frmAbout.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:LibraryApplication.frmCheckIn">
+            <summary>
+            Check in window.
+            </summary>
+        </member>
+        <member name="F:LibraryApplication.frmCheckIn.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.frmCheckIn.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LibraryApplication.frmCheckIn.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.frmCheckIn.#ctor">
+            <summary>
+            Check in form constructor.
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.frmCheckIn.#ctor(System.Boolean)">
+            <summary>
+            Constructor for the Check In/Out form.
+            </summary>
+            <param name="isCheckIn">If true, then display the check in panel, otherwise display check out panel.</param>
+        </member>
+        <member name="M:LibraryApplication.frmCheckIn.#ctor(System.Boolean,System.Int16)">
+            <summary>
+            Constructor for the Check in/out form
+            </summary>
+            <param name="isCheckIn">If true, then display the check in panel, otherwise display check out panel.</param>
+            <param name="memberID">The current member's memberID.</param>
+        </member>
+        <member name="T:LibraryApplication.frmMain">
+            <summary>
+            Main form that is displayed.
+            </summary>
+        </member>
+        <member name="F:LibraryApplication.frmMain.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.frmMain.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LibraryApplication.frmMain.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.frmMain.#ctor">
+            <summary>
+            Main form that is displayed.
+            </summary>
+        </member>
+        <member name="T:LibraryApplication.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:LibraryApplication.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:LibraryApplication.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:LibraryApplication.Properties.Resources.States">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;Abbreviations xmlns=&quot;http://tempuri.org/States.xsd&quot;&gt;
+            &lt;State&gt;
+            &lt;Name&gt;ALABAMA&lt;/Name&gt;
+            &lt;Abbreviation&gt;AL&lt;/Abbreviation&gt;
+            &lt;/State&gt;
+            &lt;State&gt;
+            &lt;Name&gt;ALASKA&lt;/Name&gt;
+            &lt;Abbreviation&gt;AK&lt;/Abbreviation&gt;
+            &lt;/State&gt;
+            &lt;State&gt;
+            &lt;Name&gt;AMERICAN SAMOA&lt;/Name&gt;
+            &lt;Abbreviation&gt;AS&lt;/Abbreviation&gt;
+            &lt;/State&gt;
+            &lt;State&gt;
+            &lt;Name&gt;ARIZONA&lt;/Name&gt;
+            &lt;Abbreviation&gt;AZ&lt;/Abbreviation&gt;
+            &lt;/State&gt;
+            &lt;State&gt;
+            &lt;Name&gt;ARKANSAS&lt;/Name&gt;
+            &lt;Abbreviation&gt;AR&lt;/Abbreviation&gt;
+            &lt;/State&gt;
+            &lt;State&gt;
+            &lt;Name&gt;CALIFORNIA&lt;/Name&gt;
+            &lt;Abbr [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="M:LibraryApplication.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+    </members>
+</doc>

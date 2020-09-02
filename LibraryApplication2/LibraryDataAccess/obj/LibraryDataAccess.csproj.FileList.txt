@@ -1,0 +1,8 @@
+bin\Debug\LibraryDataAccess.dll
+bin\Debug\LibraryDataAccess.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\LibraryDataAccess.dll
+obj\Debug\LibraryDataAccess.pdb
+bin\Debug\Entities.dll
+bin\Debug\Entities.pdb
+bin\Debug\Entities.xml

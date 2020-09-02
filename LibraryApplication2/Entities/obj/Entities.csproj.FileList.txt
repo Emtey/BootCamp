@@ -1,0 +1,7 @@
+bin\Debug\Entities.dll
+bin\Debug\Entities.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Entities.dll
+obj\Debug\Entities.pdb
+bin\Debug\LibraryEntities.dll
+bin\Debug\Entities.dll.config
