@@ -1,0 +1,2 @@
+Uses various aspects of C# language. I created two assemblies and a console application whose purpose was to test the assemblies.
+Demostrates interfaces, abstract classes, custom attributes, overriding inherited methods and use of collections and generic collections.
