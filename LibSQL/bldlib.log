@@ -1,0 +1,931 @@
+ domain_name                                                                   
+	                                                   
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- 
+ isbn                                                                          
+	                                                   
+ item_info                                                                     
+	                                                   
+ letter                                                                        
+	                                                   
+ longstring                                                                    
+	                                                   
+ member_no                                                                     
+	                                                   
+ normstring                                                                    
+	                                                   
+ phonenumber                                                                   
+	                                                   
+ remarks                                                                       
+	                                                   
+ shortstring                                                                   
+	                                                   
+ statecode                                                                     
+	                                                   
+ title_no                                                                      
+	                                                   
+ yes_no                                                                        
+	                                                   
+ zipcode                                                                       
+	                                                   
+
+(13 rows affected)
+ table_name                                                                    
+	                                                   
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- 
+ copy                                                                          
+	                                                   
+ reservation                                                                   
+	                                                   
+ loan                                                                          
+	                                                   
+ loanhist                                                                      
+	                                                   
+ member                                                                        
+	                                                   
+ adult                                                                         
+	                                                   
+ juvenile                                                                      
+	                                                   
+ title                                                                         
+	                                                   
+ item                                                                          
+	                                                   
+
+(9 rows affected)
+ name                                                                          
+	                                                   
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- 
+ address_table                                                                 
+	                                                   
+ date_table                                                                    
+	                                                   
+ firstname_table                                                               
+	                                                   
+ integer_table                                                                 
+	                                                   
+ language_table                                                                
+	                                                   
+ lastname_table                                                                
+	                                                   
+ letter_table                                                                  
+	                                                   
+ street_table                                                                  
+	                                                   
+
+(8 rows affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(26 rows affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(1 row affected)
+(0 rows affected)
+ integer     
+ ----------- 
+           1 
+           2 
+           3 
+           4 
+           5 
+           6 
+           7 
+           8 
+           9 
+          10 
+          11 
+          12 
+          13 
+          14 
+          15 
+          16 
+          17 
+          18 
+          19 
+          20 
+          21 
+          22 
+          23 
+          24 
+          25 
+          26 
+          27 
+          28 
+          29 
+          30 
+          31 
+          32 
+          33 
+          34 
+          35 
+          36 
+          37 
+          38 
+          39 
+          40 
+          41 
+          42 
+          43 
+          44 
+          45 
+          46 
+          47 
+          48 
+          49 
+          50 
+          51 
+          52 
+          53 
+          54 
+          55 
+          56 
+          57 
+          58 
+          59 
+          60 
+          61 
+          62 
+          63 
+          64 
+          65 
+          66 
+          67 
+          68 
+          69 
+          70 
+          71 
+          72 
+          73 
+          74 
+          75 
+          76 
+          77 
+          78 
+          79 
+          80 
+          81 
+          82 
+          83 
+          84 
+          85 
+          86 
+          87 
+          88 
+          89 
+          90 
+          91 
+          92 
+          93 
+          94 
+          95 
+          96 
+          97 
+          98 
+          99 
+         100 
+
+(100 rows affected)
+ integer     lastname        
+ ----------- --------------- 
+           1 Anderson        
+           2 Barr            
+           3 Brooke          
+           4 Chen            
+           5 Durkin          
+           6 Erickson        
+           7 Funk            
+           8 Graff           
+           9 Harui           
+          10 Hightower       
+          11 Jones           
+          12 Kilwine         
+          13 LaBrie          
+          14 Martin          
+          15 Miksovsky       
+          16 Nash            
+          17 O'Brian         
+          18 Perry           
+          19 Rothenberg      
+          20 Rudd            
+          21 Sherman         
+          22 Smith           
+          23 Thomas          
+          24 Valentine       
+          25 Wolfe-Hellene   
+          26 Young           
+
+(26 rows affected)
+ integer     firstname       
+ ----------- --------------- 
+           1 Amy             
+           2 Angela          
+           3 Brian           
+           4 Clair           
+           5 Daniel          
+           6 Darlene         
+           7 Eva             
+           8 Frank           
+           9 Gary            
+          10 Jose            
+          11 Joshua          
+          12 Karl            
+          13 Katie           
+          14 Linda           
+          15 Mary Anne       
+          16 Michael         
+          17 Monica          
+          18 Nate            
+          19 Peter           
+          20 Robert          
+          21 Sarah           
+          22 Shelly          
+          23 Stephen         
+          24 Teresa          
+          25 Thom            
+          26 William         
+
+(26 rows affected)
+ integer     letter 
+ ----------- ------ 
+           1 A      
+           2 B      
+           3 B      
+           4 C      
+           5 D      
+           6 E      
+           7 F      
+           8 G      
+           9 H      
+          10 H      
+          11 J      
+          12 K      
+          13 L      
+          14 M      
+          15 M      
+          16 N      
+          17 O      
+          18 P      
+          19 R      
+          20 R      
+          21 S      
+          22 S      
+          23 T      
+          24 V      
+          25 W      
+          26 Y      
+
+(26 rows affected)
+ integer     street             
+ ----------- ------------------ 
+           1 Apple Lane         
+           2 Bowery Estates     
+           3 Cannery Row        
+           4 Dogwood Drive      
+           5 Elm Street         
+           6 Fir Street         
+           7 Goshen Road        
+           8 The Highlands      
+           9 Island Drive       
+          10 James Road         
+          11 King Street        
+          12 Larch Mont Road    
+          13 Maple Street       
+          14 New Pike Road      
+          15 Oak Drive          
+          16 Pine Place         
+          17 Queen Ann Drive    
+          18 Race Track Road    
+          19 Stoney Way         
+          20 Tamarack Road      
+          21 University Lane    
+          22 Valley Road        
+          23 Willow Road        
+
+(23 rows affected)
+ integer     city            state zip        
+ ----------- --------------- ----- ---------- 
+           1 Juneau          AK    99801      
+           2 Montgomery      AL    36100      
+           3 Phoenix         AZ    85011      
+           4 Sacramento      CA    94203      
+           5 Denver          CO    80201      
+           6 Washington      DC    20510-0001 
+           7 Tallahassee     FL    32301      
+           8 Atlanta         GA    30026      
+           9 Honolulu        HI    96800-3017 
+          10 Springfield     IL    62700      
+          11 Baton Rouge     LA    70800      
+          12 Boston          MA    02138-7190 
+          13 Annapolis       MD    21400      
+          14 Trenton         NJ    08600      
+          15 Carson City     NV    89701      
+          16 Albany          NY    12200-2837 
+          17 Salem           OR    97301      
+          18 Harrisburg      PA    17100      
+          19 Austin          TX    73301      
+          20 Salt Lake City  UT    84100      
+          21 Richmond        VA    23173-1823 
+          22 Olympia         WA    98507      
+          23 Charleston      WV    25300      
+
+(23 rows affected)
+ integer     date                    
+ ----------- ----------------------- 
+           1 1998-01-01 00:00:00.000 
+           2 1998-02-02 00:00:00.000 
+           3 1998-03-03 00:00:00.000 
+           4 1998-04-04 00:00:00.000 
+           5 1998-05-05 00:00:00.000 
+           6 1998-06-06 00:00:00.000 
+           7 1998-07-07 00:00:00.000 
+           8 1998-08-08 00:00:00.000 
+           9 1998-09-09 00:00:00.000 
+          10 1998-10-10 00:00:00.000 
+          11 1998-11-11 00:00:00.000 
+          12 1998-12-12 00:00:00.000 
+
+(12 rows affected)
+ integer     descr    
+ ----------- -------- 
+           1 ARABIC   
+           2 CHINESE  
+           3 ENGLISH  
+           4 FRENCH   
+           5 GERMAN   
+           6 JAPANESE 
+           7 KOREAN   
+           8 LATIN    
+           9 PORTUGES 
+          10 SPANISH  
+
+(10 rows affected)
+Checking identity information: current identity value '17576', current column
+value '10000'.
+DBCC execution completed. If DBCC printed error messages, contact your system
+administrator.
+Time (in minutes:seconds) to load Member/Adult/Juvenile.  0 :1
+Time (in minutes:seconds) to load Title/Item/Copy.  0 :0
+Time (in minutes:seconds) to load Loan.  0 :0
+Time (in minutes:seconds) to load Reservation.  0 :0
+Time (in minutes:seconds) to load LoanHist.  0 :4
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ member                                                                        
+	                                                   10000       
+	520 KB             472 KB             8 KB               
+	40 KB              
+
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ adult                                                                         
+	                                                   5000        
+	456 KB             392 KB             8 KB               
+	56 KB              
+
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ juvenile                                                                      
+	                                                   5000        
+	136 KB             104 KB             8 KB               
+	24 KB              
+
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ title                                                                         
+	                                                   50          
+	16 KB              8 KB               8 KB               
+	0 KB               
+
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ item                                                                          
+	                                                   1000        
+	48 KB              40 KB              8 KB               
+	0 KB               
+
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ copy                                                                          
+	                                                   10000       
+	264 KB             200 KB             8 KB               
+	56 KB              
+
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ loan                                                                          
+	                                                   2000        
+	136 KB             80 KB              8 KB               
+	48 KB              
+
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ loanhist                                                                      
+	                                                   52000       
+	3656 KB            3624 KB            8 KB               
+	24 KB              
+
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ reservation                                                                   
+	                                                   2160        
+	64 KB              56 KB              8 KB               
+	0 KB               
+
+PRIMARY KEYS CREATED:
+ TABLE_NAME                                                                    
+	                                                   
+	CONSTRAINT_NAME                                                        
+	                                                          
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- 
+	-----------------------------------------------------------------------
+	--------------------------------------------------------- 
+ member                                                                        
+	                                                   
+	member_ident                                                           
+	                                                          
+ adult                                                                         
+	                                                   
+	adult_ident                                                            
+	                                                          
+ juvenile                                                                      
+	                                                   
+	juvenile_ident                                                         
+	                                                          
+ title                                                                         
+	                                                   
+	title_ident                                                            
+	                                                          
+ item                                                                          
+	                                                   
+	item_ident                                                             
+	                                                          
+ copy                                                                          
+	                                                   
+	copy_ident                                                             
+	                                                          
+ loan                                                                          
+	                                                   
+	loan_ident                                                             
+	                                                          
+ reservation                                                                   
+	                                                   
+	reservation_ident                                                      
+	                                                          
+ loanhist                                                                      
+	                                                   
+	loanhist_ident                                                         
+	                                                          
+
+(9 rows affected)
+FOREIGN KEYS CREATED:
+ TABLE_NAME                                                                    
+	                                                   
+	CONSTRAINT_NAME                                                        
+	                                                          
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- 
+	-----------------------------------------------------------------------
+	--------------------------------------------------------- 
+ adult                                                                         
+	                                                   
+	adult_member_link                                                      
+	                                                          
+ juvenile                                                                      
+	                                                   
+	juvenile_member_link                                                   
+	                                                          
+ juvenile                                                                      
+	                                                   
+	juvenile_adult_link                                                    
+	                                                          
+ copy                                                                          
+	                                                   
+	copy_item_link                                                         
+	                                                          
+ copy                                                                          
+	                                                   
+	copy_title_link                                                        
+	                                                          
+ loan                                                                          
+	                                                   
+	loan_copy_link                                                         
+	                                                          
+ loan                                                                          
+	                                                   
+	loan_member_link                                                       
+	                                                          
+ loan                                                                          
+	                                                   
+	loan_title_link                                                        
+	                                                          
+ loanhist                                                                      
+	                                                   
+	loanhist_copy_link                                                     
+	                                                          
+ loanhist                                                                      
+	                                                   
+	loanhist_title_link                                                    
+	                                                          
+ reservation                                                                   
+	                                                   
+	reservation_item_link                                                  
+	                                                          
+ reservation                                                                   
+	                                                   
+	reservation_member_link                                                
+	                                                          
+ item                                                                          
+	                                                   
+	item_title_link                                                        
+	                                                          
+
+Time (in minutes:seconds) to create Member related indexes.  0 :0
+Time (in minutes:seconds) to create Book related indexes.  0 :0
+Time (in minutes:seconds) to create Loan History related indexes.  0 :0
+CREATED INDEXES:
+ name                                                                          
+	                                                   
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- 
+ copy_title_link                                                               
+	                                                   
+ item_title_link                                                               
+	                                                   
+ juvenile_member_link                                                          
+	                                                   
+ loan_member_link                                                              
+	                                                   
+ loan_title_link                                                               
+	                                                   
+ loanhist_member_link                                                          
+	                                                   
+ loanhist_title_link                                                           
+	                                                   
+ reserve_item_link                                                             
+	                                                   
+
+SPACE REQUIRED:
+ database_name                                                                 
+	                                                   database_size      
+	unallocated space  
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ------------------ 
+	------------------ 
+ library                                                                       
+	                                                   65.00 MB           
+	40.20 MB           
+
+ reserved           data               index_size         unused             
+ ------------------ ------------------ ------------------ ------------------ 
+ 10040 KB           5704 KB            3632 KB            704 KB             
+
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ juvenile                                                                      
+	                                                   5000        
+	408 KB             104 KB             184 KB             
+	120 KB             
+
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ item                                                                          
+	                                                   1000        
+	104 KB             48 KB              56 KB              
+	0 KB               
+
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ copy                                                                          
+	                                                   10000       
+	600 KB             280 KB             240 KB             
+	80 KB              
+
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ loan                                                                          
+	                                                   2000        
+	272 KB             96 KB              152 KB             
+	24 KB              
+
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ reservation                                                                   
+	                                                   2160        
+	200 KB             72 KB              72 KB              
+	56 KB              
+
+ name                                                                          
+	                                                   rows        
+	reserved           data               index_size         
+	unused             
+ ------------------------------------------------------------------------------
+	-------------------------------------------------- ----------- 
+	------------------ ------------------ ------------------ 
+	------------------ 
+ loanhist                                                                      
+	                                                   52000       
+	5976 KB            3624 KB            2136 KB            
+	216 KB             
+
