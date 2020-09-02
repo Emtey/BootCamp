@@ -1,0 +1,2 @@
+This is a windows forms MDI library application with child forms and dialog boxes. Validation is performed on all required fields, 
+using regular expressions where it is helpful.

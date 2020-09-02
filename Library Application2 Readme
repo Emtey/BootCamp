@@ -1,0 +1,2 @@
+This is a windows forms MDI library application, the only difference between this project and Library Phase One 
+is that I wrote the data access tier using ADO.NET, and created all the stored procedures in MS SQL Server 2005.
