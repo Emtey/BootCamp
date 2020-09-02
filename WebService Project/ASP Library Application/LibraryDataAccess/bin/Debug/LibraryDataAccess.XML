@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LibraryDataAccess</name>
+    </assembly>
+    <members>
+        <member name="T:LibraryDataAccess.DataAccess">
+            <summary>
+            DataAccess tier
+            </summary>
+        </member>
+        <member name="M:LibraryDataAccess.DataAccess.#ctor">
+            <summary>
+            Default constructor for DataAccess Class.
+            </summary>
+        </member>
+        <member name="M:LibraryDataAccess.DataAccess.AddMember(Entities.AdultMember)">
+            <summary>
+            Adds an adult member
+            </summary>
+            <param name="member">Member object</param>
+        </member>
+        <member name="M:LibraryDataAccess.DataAccess.AddMember(Entities.JuvenileMember)">
+            <summary>
+            Adds a juvenile member
+            </summary>
+            <param name="member">Member object</param>
+        </member>
+        <member name="M:LibraryDataAccess.DataAccess.CheckInItem(System.Int32,System.Int16)">
+            <summary>
+            Checks in an item
+            </summary>
+            <param name="isbn">ISBN </param>
+            <param name="copyNumber">Copy Number</param>
+        </member>
+        <member name="M:LibraryDataAccess.DataAccess.CheckOutItem(System.Int16,System.Int32,System.Int16)">
+            <summary>
+            Checks an item out
+            </summary>
+            <param name="memberNumber">Member ID</param>
+            <param name="isbn">ISBN</param>
+            <param name="copyNum">Copy Number</param>
+        </member>
+        <member name="M:LibraryDataAccess.DataAccess.GetItem(System.Int32,System.Int16)">
+            <summary>
+            Retreives an item.
+            </summary>
+            <param name="isbn">ISBN</param>
+            <param name="copyNumber">Copy Number</param>
+            <returns>Item Object</returns>
+        </member>
+        <member name="M:LibraryDataAccess.DataAccess.GetItems(System.Int16)">
+            <summary>
+            Retrieves items.
+            </summary>
+            <param name="memberNumber">Member ID</param>
+            <returns>Items Data Set</returns>
+        </member>
+        <member name="M:LibraryDataAccess.DataAccess.GetMember(System.Int16)">
+            <summary>
+            Retrieves a member
+            </summary>
+            <param name="memberNumber">Member ID</param>
+            <returns>member object</returns>
+        </member>
+        <member name="M:LibraryDataAccess.DataAccess.GetMember(System.Int32,System.Int16)">
+            <summary>
+            Retrieves a member
+            </summary>
+            <param name="isbn">ISBN</param>
+            <param name="copyNum">Copy Number</param>
+            <returns>Member object</returns>
+        </member>
+        <member name="M:LibraryDataAccess.DataAccess.RenewMember(System.Int16)">
+            <summary>
+            Attaches to the DB and updates the members expiration date.
+            </summary>
+            <param name="memberID">memberID</param>
+        </member>
+        <member name="M:LibraryDataAccess.DataAccess.ConvertJuvenile(System.Int16)">
+            <summary>
+            Converts a Juvenile record to an Adult record.
+            </summary>
+            <param name="memberID">memberID</param>
+        </member>
+        <member name="M:LibraryDataAccess.DataAccess.AddItem(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Adds new item to the database.
+            </summary>
+            <param name="isbn">the boook's ISBN</param>
+            <param name="title">title of the book</param>
+            <param name="author">author of the book</param>
+            <param name="loanable">is the book loanable</param>
+        </member>
+    </members>
+</doc>

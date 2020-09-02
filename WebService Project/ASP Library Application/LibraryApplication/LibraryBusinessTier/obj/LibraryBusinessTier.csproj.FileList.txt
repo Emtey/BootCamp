@@ -1,0 +1,8 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\LibraryBusinessTier.dll
+bin\Debug\LibraryBusinessTier.pdb
+bin\Debug\LibraryDataAccess.dll
+bin\Debug\LibraryDataAccessInterface.dll
+bin\Debug\LibraryEntities.dll
+obj\Debug\LibraryBusinessTier.dll
+obj\Debug\LibraryBusinessTier.pdb

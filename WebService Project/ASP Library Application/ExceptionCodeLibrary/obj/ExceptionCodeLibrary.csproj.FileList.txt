@@ -1,0 +1,5 @@
+bin\Debug\ExceptionCodeLibrary.dll
+bin\Debug\ExceptionCodeLibrary.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ExceptionCodeLibrary.dll
+obj\Debug\ExceptionCodeLibrary.pdb

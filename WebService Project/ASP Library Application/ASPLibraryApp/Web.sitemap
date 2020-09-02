@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="~/Default.aspx" title="Login Panel" description="Application Login Panel">
+		<siteMapNode url="~/MainPanel.aspx" title="Member Info"  description="Member Information Panel">
+		</siteMapNode>
+		<siteMapNode url="~/AdultMemberPanel.aspx" title="Adult Member Maintenance"  description="Adult Member Maintenance Panel">
+		</siteMapNode>
+		<siteMapNode url="~/JuvenileMemberPanel.aspx" title="Juvenile Member Maintenance"  description="Juvenile Member Maintenance Panel">
+		</siteMapNode>
+		<siteMapNode url="~/CheckInPanel.aspx" title="Check In"  description="Check In Panel">
+		</siteMapNode>
+		<siteMapNode url="~/ItemPanel.aspx" title="Item Maintenance"  description="Item Maintenance Panel">
+		</siteMapNode>
+	</siteMapNode>
+</siteMap>

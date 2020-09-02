@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://library.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://library.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://library.org/">
+      <s:import namespace="http://library.org/ItemsDataSet.xsd" />
+      <s:import schemaLocation="http://localhost:2894/LibraryWebService/Service.asmx?schema=ItemsDataSet" namespace="http://library.org/ItemsDataSet.xsd" />
+      <s:element name="AddJuvenileMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="member" type="tns:JuvenileMember" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="JuvenileMember">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Member">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="AdultMemberID" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="BirthDate" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Member">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MiddleInitial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpirationDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Street" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZipCode" type="s:string" />
+        </s:sequence>
+        <s:attribute default="0" name="MemberID" type="s:short" />
+      </s:complexType>
+      <s:complexType name="AdultMember">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Member" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="AddJuvenileMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="member" type="tns:JuvenileMember" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAdultMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="member" type="tns:AdultMember" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAdultMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="member" type="tns:AdultMember" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckInItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="isbn" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="copyNumber" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckInItemResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CheckOutItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="memberNumber" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="isbn" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="copyNumber" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckOutItemResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="isbn" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="copyNumber" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetItemResult" type="tns:Item" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Item">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ISBN" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CopyNumber" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="Author" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MemberNumber" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="CheckOutDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DueDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Translation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cover" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Loanable" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Synopsis" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="On_loan" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetItems">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="memberNumber" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetItemsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://library.org/ItemsDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="memberNumber" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMemberResult" type="tns:Member" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RenewMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="memberNumber" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RenewMemberResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConvertJuvenile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="memberNumber" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertJuvenileResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="isbn" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="author" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="loanable" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddItemResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddJuvenileMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:AddJuvenileMember" />
+  </wsdl:message>
+  <wsdl:message name="AddJuvenileMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:AddJuvenileMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAdultMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAdultMember" />
+  </wsdl:message>
+  <wsdl:message name="AddAdultMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAdultMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckInItemSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckInItem" />
+  </wsdl:message>
+  <wsdl:message name="CheckInItemSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckInItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckOutItemSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckOutItem" />
+  </wsdl:message>
+  <wsdl:message name="CheckOutItemSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckOutItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetItemSoapIn">
+    <wsdl:part name="parameters" element="tns:GetItem" />
+  </wsdl:message>
+  <wsdl:message name="GetItemSoapOut">
+    <wsdl:part name="parameters" element="tns:GetItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetItemsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetItems" />
+  </wsdl:message>
+  <wsdl:message name="GetItemsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMember" />
+  </wsdl:message>
+  <wsdl:message name="GetMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="RenewMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:RenewMember" />
+  </wsdl:message>
+  <wsdl:message name="RenewMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:RenewMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConvertJuvenileSoapIn">
+    <wsdl:part name="parameters" element="tns:ConvertJuvenile" />
+  </wsdl:message>
+  <wsdl:message name="ConvertJuvenileSoapOut">
+    <wsdl:part name="parameters" element="tns:ConvertJuvenileResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddItemSoapIn">
+    <wsdl:part name="parameters" element="tns:AddItem" />
+  </wsdl:message>
+  <wsdl:message name="AddItemSoapOut">
+    <wsdl:part name="parameters" element="tns:AddItemResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="AddJuvenileMember">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Juvenile member to the database.</wsdl:documentation>
+      <wsdl:input message="tns:AddJuvenileMemberSoapIn" />
+      <wsdl:output message="tns:AddJuvenileMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAdultMember">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Adult member to the database.</wsdl:documentation>
+      <wsdl:input message="tns:AddAdultMemberSoapIn" />
+      <wsdl:output message="tns:AddAdultMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckInItem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check in an item.</wsdl:documentation>
+      <wsdl:input message="tns:CheckInItemSoapIn" />
+      <wsdl:output message="tns:CheckInItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckOutItem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check out an item.</wsdl:documentation>
+      <wsdl:input message="tns:CheckOutItemSoapIn" />
+      <wsdl:output message="tns:CheckOutItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets an item from the database.</wsdl:documentation>
+      <wsdl:input message="tns:GetItemSoapIn" />
+      <wsdl:output message="tns:GetItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItems">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets a list of items from the database</wsdl:documentation>
+      <wsdl:input message="tns:GetItemsSoapIn" />
+      <wsdl:output message="tns:GetItemsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMember">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets a member from the database.</wsdl:documentation>
+      <wsdl:input message="tns:GetMemberSoapIn" />
+      <wsdl:output message="tns:GetMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RenewMember">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Renews the expirations date of an expired membership.</wsdl:documentation>
+      <wsdl:input message="tns:RenewMemberSoapIn" />
+      <wsdl:output message="tns:RenewMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertJuvenile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Converts a juvenile member into an adult member.</wsdl:documentation>
+      <wsdl:input message="tns:ConvertJuvenileSoapIn" />
+      <wsdl:output message="tns:ConvertJuvenileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddItem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds an item to the database.</wsdl:documentation>
+      <wsdl:input message="tns:AddItemSoapIn" />
+      <wsdl:output message="tns:AddItemSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddJuvenileMember">
+      <soap:operation soapAction="http://library.org/AddJuvenileMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAdultMember">
+      <soap:operation soapAction="http://library.org/AddAdultMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckInItem">
+      <soap:operation soapAction="http://library.org/CheckInItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckOutItem">
+      <soap:operation soapAction="http://library.org/CheckOutItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItem">
+      <soap:operation soapAction="http://library.org/GetItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItems">
+      <soap:operation soapAction="http://library.org/GetItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMember">
+      <soap:operation soapAction="http://library.org/GetMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RenewMember">
+      <soap:operation soapAction="http://library.org/RenewMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertJuvenile">
+      <soap:operation soapAction="http://library.org/ConvertJuvenile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddItem">
+      <soap:operation soapAction="http://library.org/AddItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddJuvenileMember">
+      <soap12:operation soapAction="http://library.org/AddJuvenileMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAdultMember">
+      <soap12:operation soapAction="http://library.org/AddAdultMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckInItem">
+      <soap12:operation soapAction="http://library.org/CheckInItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckOutItem">
+      <soap12:operation soapAction="http://library.org/CheckOutItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItem">
+      <soap12:operation soapAction="http://library.org/GetItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItems">
+      <soap12:operation soapAction="http://library.org/GetItems" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMember">
+      <soap12:operation soapAction="http://library.org/GetMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RenewMember">
+      <soap12:operation soapAction="http://library.org/RenewMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertJuvenile">
+      <soap12:operation soapAction="http://library.org/ConvertJuvenile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddItem">
+      <soap12:operation soapAction="http://library.org/AddItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://localhost:2894/LibraryWebService/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://localhost:2894/LibraryWebService/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

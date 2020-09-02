@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Entities</name>
+    </assembly>
+    <members>
+        <member name="T:Entities.AdultMember">
+            <summary>
+            AdultMember class, inherits from Member.
+            </summary>
+        </member>
+        <member name="T:Entities.Member">
+            <summary>
+            The Member Entity.
+            </summary>
+        </member>
+        <member name="M:Entities.Member.#ctor">
+            <summary>
+            The member constructor.
+            </summary>
+        </member>
+        <member name="P:Entities.Member.MemberID">
+            <summary>
+            Gets memberNo property
+            </summary>
+        </member>
+        <member name="P:Entities.Member.LastName">
+            <summary>
+            gets/sets lastName property
+            </summary>
+        </member>
+        <member name="P:Entities.Member.FirstName">
+            <summary>
+            gets/sets firstName property
+            </summary>
+        </member>
+        <member name="P:Entities.Member.MiddleInitial">
+            <summary>
+            gets/sets middleInitial property
+            </summary>
+        </member>
+        <member name="P:Entities.Member.City">
+            <summary>
+            gets/set city property
+            </summary>
+        </member>
+        <member name="P:Entities.Member.ExpirationDate">
+            <summary>
+             gets/sets ExpirationDate property
+            </summary>
+        </member>
+        <member name="P:Entities.Member.PhoneNumber">
+            <summary>
+            gets/sets PhoneNumber property
+            </summary>
+        </member>
+        <member name="P:Entities.Member.State">
+            <summary>
+            Gets/set State property
+            </summary>
+        </member>
+        <member name="P:Entities.Member.Street">
+            <summary>
+            get/set street property
+            </summary>
+        </member>
+        <member name="P:Entities.Member.ZipCode">
+            <summary>
+            get/set zipcode property
+            </summary>
+        </member>
+        <member name="M:Entities.AdultMember.#ctor">
+            <summary>
+            Default Constructor of the Adult Member class.
+            </summary>
+        </member>
+        <member name="T:Entities.LibraryException">
+            <summary>
+            LibrayException Class, extends Exception class.
+            </summary>
+        </member>
+        <member name="M:Entities.LibraryException.#ctor">
+            <summary>
+            Initializes a new instance of the LibraryException class. 
+            </summary>
+        </member>
+        <member name="M:Entities.LibraryException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the LibraryException class with a specified error message. 
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Entities.LibraryException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the LibraryException class with serialized data. 
+            </summary>
+            <param name="info">info</param>
+            <param name="context">context</param>
+        </member>
+        <member name="M:Entities.LibraryException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the LibraryException class with a specified error message 
+            and a reference to the inner exception that is the cause of this exception. 
+            </summary>
+            <param name="message">message</param>
+            <param name="innnerException">inner exception</param>
+        </member>
+        <member name="M:Entities.LibraryException.#ctor(Entities.ErrorCode)">
+            <summary>
+            Initializes a new instance of the LibraryException class with a specified ErrorCode. 
+            </summary>
+            <param name="errorCode">ErrorCode</param>
+        </member>
+        <member name="M:Entities.LibraryException.#ctor(Entities.ErrorCode,System.String)">
+            <summary>
+            Initializes a new instance of the LibraryException class with a specified ErrorCode and a specified error message. 
+            </summary>
+            <param name="errorCode">ErrorCode</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:Entities.LibraryException.#ctor(System.Int16,System.String)">
+            <summary>
+            Initializes a new instance of the LibraryException class that indicates an item is already on loan to 
+            another member when an attempt is made to check out the item. The ErrorCode will be set implicitly to 
+            ErrorCode.ItemAlreadyOnLoan. 
+            </summary>
+            <param name="otherMemberID">Member Identifcation</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:Entities.LibraryException.#ctor(Entities.ErrorCode,System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the LibraryException class with a specified ErrorCode, a specified error message, 
+            and a reference to the inner exception that is the cause of this exception 
+            </summary>
+            <param name="errorCode">ErrorCode</param>
+            <param name="message">message</param>
+            <param name="innerException">InnerException</param>
+        </member>
+        <member name="M:Entities.LibraryException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Used by the serialization mechanism to perform custom serialization of this exception object. 
+            </summary>
+            <param name="info">The SerializationInfo object. </param>
+            <param name="context">The StreamingContext object.</param>
+        </member>
+        <member name="P:Entities.LibraryException.LibraryErrorCode">
+            <summary>
+            gets the LibraryErrorCode property
+            </summary>
+        </member>
+        <member name="P:Entities.LibraryException.OtherMemberID">
+            <summary>
+            Gets the OtherMemberID property
+            </summary>
+        </member>
+        <member name="T:Entities.ErrorCode">
+            <summary>
+            ErrorCode Enumeration
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.None">
+            <summary>
+            None - no errors encountered.
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.GenericException">
+            <summary>
+            GenericException - generic exception encoutered.
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.ItemNotFound">
+            <summary>
+            ItemNotFound - item was not found in the db
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.NoSuchMember">
+            <summary>
+            NoSuchMember - Member not found in teh DB
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.ItemNotOnLoan">
+            <summary>
+            ItemNotOnLoan - Item is not checked out.
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.CheckInFailed">
+            <summary>
+            CheckInFailed - Check in failed.
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.ItemAlreadyOnLoan">
+            <summary>
+            ItemAlreadyOnLoan - Item is already on loan
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.CheckOutFailed">
+            <summary>
+            CheckOutFailed - Check out failed.
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.AddAdultFailed">
+            <summary>
+            AddAdultFailed - Add adult failed
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.MissingAdultMember">
+            <summary>
+            Missing Adult Member - Adult member field on juvenile record is missing.
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.AddJuvenileFailed">
+            <summary>
+            AddJuvenileFailed = Add juvenile failed.
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.ItemNotLoanable">
+            <summary>
+            ItemNotLoanable - Item is not loanable.
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.RenewMemberFailed">
+            <summary>
+            RenewMemberFailed - Member could not be renewed.
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.ConvertJuvenileFailed">
+            <summary>
+            ConvertJuvenileFaile - Juvenile failed to convert to adult.
+            </summary>
+        </member>
+        <member name="F:Entities.ErrorCode.AddItemFailed">
+            <summary>
+            AddItemFailed - Item failed to be added to table.
+            </summary>
+        </member>
+        <member name="T:Entities.Item">
+            <summary>
+            Item class.
+            </summary>
+        </member>
+        <member name="M:Entities.Item.#ctor(System.Int32,System.Int16,System.String,System.String,System.Int16,System.DateTime,System.DateTime)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="isbn">ISBN number</param>
+            <param name="copy_num">The copy number of the item.</param>
+            <param name="title">The title of the item</param>
+            <param name="author">The author of the item</param>
+            <param name="member_no">Member Identification Number</param>
+            <param name="out_date">Check Out Date</param>
+            <param name="due_date">Date the item is due back</param>
+        </member>
+        <member name="P:Entities.Item.ISBN">
+            <summary>
+            get for ISBN Property
+            </summary>
+        </member>
+        <member name="P:Entities.Item.CopyNumber">
+            <summary>
+            get for CopyNumber property
+            </summary>
+        </member>
+        <member name="P:Entities.Item.Author">
+            <summary>
+            get for Author property
+            </summary>
+        </member>
+        <member name="P:Entities.Item.Title">
+            <summary>
+            get for Title property
+            </summary>
+        </member>
+        <member name="P:Entities.Item.MemberNumber">
+            <summary>
+            get for MemberNumber property
+            </summary>
+        </member>
+        <member name="P:Entities.Item.CheckOutDate">
+            <summary>
+            get for CheckOutDate property
+            </summary>
+        </member>
+        <member name="P:Entities.Item.DueDate">
+            <summary>
+            get for DueDate property
+            </summary>
+        </member>
+        <member name="P:Entities.Item.Translation">
+            <summary>
+            get for Translation property
+            </summary>
+        </member>
+        <member name="P:Entities.Item.Cover">
+            <summary>
+            get for Cover property
+            </summary>
+        </member>
+        <member name="P:Entities.Item.Loanable">
+            <summary>
+            get for Loanable property
+            </summary>
+        </member>
+        <member name="P:Entities.Item.Synopsis">
+            <summary>
+            get for Synopsis property
+            </summary>
+        </member>
+        <member name="P:Entities.Item.On_loan">
+            <summary>
+            get for on_loan property
+            </summary>
+        </member>
+        <member name="T:Entities.JuvenileMember">
+            <summary>
+            JuvenileMember class, inherits from Member
+            </summary>
+        </member>
+        <member name="M:Entities.JuvenileMember.#ctor">
+            <summary>
+            defualt constructor for juvenileMember
+            </summary>
+        </member>
+        <member name="P:Entities.JuvenileMember.AdultMemberID">
+            <summary>
+            gets/sets the AdultMemberID property
+            </summary>
+        </member>
+        <member name="P:Entities.JuvenileMember.BirthDate">
+            <summary>
+            Gets/sets the BirthDate Property
+            </summary>
+        </member>
+    </members>
+</doc>
