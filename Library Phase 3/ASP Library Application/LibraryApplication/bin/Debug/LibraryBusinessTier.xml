@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LibraryBusinessTier</name>
+    </assembly>
+    <members>
+        <member name="T:LibraryBusinessTier.DBInteraction">
+            <summary>
+            DataBase interaction Class and methods.
+            </summary>
+        </member>
+        <member name="M:LibraryBusinessTier.DBInteraction.OnNewItemAdded(LibraryBusinessTier.ItemsEventsArgs)">
+            <summary>
+            The method that will be raised for the NewItemAdded event
+            </summary>
+            <param name="args">ItemsEventsArgs</param>
+        </member>
+        <member name="M:LibraryBusinessTier.DBInteraction.AddMember(Entities.JuvenileMember)">
+            <summary>
+            Add a Juvenile member to the DB.
+            </summary>
+            <param name="member"></param>
+        </member>
+        <member name="M:LibraryBusinessTier.DBInteraction.AddMember(Entities.AdultMember)">
+            <summary>
+            Add an adult member to the DB
+            </summary>
+            <param name="member">Adult Member</param>
+        </member>
+        <member name="M:LibraryBusinessTier.DBInteraction.CheckInItem(System.Int32,System.Int16)">
+            <summary>
+            Checks an item into the database.
+            </summary>
+            <param name="isbn">ISBN of the book</param>
+            <param name="copyNumber">The copy number of the book.</param>
+        </member>
+        <member name="M:LibraryBusinessTier.DBInteraction.CheckOutItem(System.Int16,System.Int32,System.Int16)">
+            <summary>
+            Checks out an item to a specific member.
+            </summary>
+            <param name="memberNumber">The Member ID number.</param>
+            <param name="isbn">The ISBN number</param>
+            <param name="copyNumber">The copy number of the book</param>
+        </member>
+        <member name="M:LibraryBusinessTier.DBInteraction.GetItem(System.Int32,System.Int16)">
+            <summary>
+            Gets and item from the DB.
+            </summary>
+            <param name="isbn">The ISBN number</param>
+            <param name="copyNumber">The copy number of the book</param>
+            <returns>Item</returns>
+        </member>
+        <member name="M:LibraryBusinessTier.DBInteraction.GetItems(System.Int16)">
+            <summary>
+            Gets the items (books) that are checked out to a member.
+            </summary>
+            <param name="memberNumber">The Member's ID</param>
+            <returns>Listing of Items</returns>
+        </member>
+        <member name="M:LibraryBusinessTier.DBInteraction.GetMember(System.Int16)">
+            <summary>
+            Gets a member from the DB
+            </summary>
+            <param name="memberNumber">The members assigned number</param>
+            <returns>Member instance</returns>
+        </member>
+        <member name="E:LibraryBusinessTier.DBInteraction.NewItemAdded">
+            <summary>
+            NewItemAdded event
+            </summary>
+        </member>
+        <member name="T:LibraryApplication.Helpers">
+            <summary>
+            Helpers class contains some basic helpers that all
+            classes and forms are going to need.
+            </summary>
+        </member>
+        <member name="M:LibraryApplication.Helpers.IsNumeric(System.String)">
+            <summary>
+            Checks a string for numerics.
+            </summary>
+            <param name="s">Input string</param>
+            <returns>True if numeric is found, False otherwise</returns>
+        </member>
+        <member name="M:LibraryApplication.Helpers.StringToIntVal(System.String)">
+            <summary>
+            Takes a string and validates that it can be converted to a integer value
+            </summary>
+            <param name="input">string value</param>
+            <returns>True if can be an Integer, false if it cant.</returns>
+        </member>
+        <member name="M:LibraryApplication.Helpers.StringToShortVal(System.String)">
+            <summary>
+            takes a string value and validates that it can be converted to a short value.
+            </summary>
+            <param name="input">string value</param>
+            <returns>True if can be an short, false if it cant.</returns>
+        </member>
+        <member name="T:LibraryBusinessTier.ItemsEventDelegate">
+            <summary>
+            Create a delegate
+            </summary>
+            <param name="args">ItemsEventDelegate</param>   
+        </member>
+        <member name="T:LibraryBusinessTier.ItemsEventsArgs">
+            <summary>
+            Create a Create an event args object to communicate details about the event
+            </summary>
+        </member>
+        <member name="M:LibraryBusinessTier.ItemsEventsArgs.#ctor(System.Int16)">
+            <summary>
+            verriden constructor
+            </summary>
+            <param name="memberID">memberID</param>
+        </member>
+        <member name="P:LibraryBusinessTier.ItemsEventsArgs.memberID">
+            <summary>
+            memberID property
+            </summary>
+        </member>
+    </members>
+</doc>
